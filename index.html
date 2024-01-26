@@ -31,19 +31,28 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <script>
-      const template = document.createElement('template');
-      template.innerHTML = `
-			<div class="tns-outer">
+
+			<div class="tns-outer" data-id=1>
 				<div class="tns-ovh">測試GTM</div>
 			</div>
-		`;
+	  
+			<div class="tns-outer" data-id=2>
+				<div class="tns-ovh">測試GTM</div>
+			</div>
+	  
+    <script>
+  //     const template = document.createElement('template');
+  //     template.innerHTML = `
+		// 	<div class="tns-outer">
+		// 		<div class="tns-ovh">測試GTM</div>
+		// 	</div>
+		// `;
 
-      const append = () => {
-        document.body.appendChild(template.content.cloneNode(true));
-      	document.body.appendChild(template.content.cloneNode(true));
-      };
-    	append()
+  //     const append = () => {
+  //       document.body.appendChild(template.content.cloneNode(true));
+  //     	document.body.appendChild(template.content.cloneNode(true));
+  //     };
+  //   	append()
       // setTimeout(() => {
       //   append();
       // }, 10000);
